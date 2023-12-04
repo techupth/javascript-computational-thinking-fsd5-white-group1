@@ -89,4 +89,4 @@ for (let i = 0; i < orders.length; i++) {
   }
 }
 let formattedJCBTotal = jbcTotal.toLocaleString();
-console.log(`Paid by JCB credit card amount: ${formattedJCBTotal} Baht`);
+console.log(`Paid by JCB credit card amount: (${formattedJCBTotal} Baht)`);
