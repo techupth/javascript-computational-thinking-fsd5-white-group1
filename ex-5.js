@@ -82,3 +82,14 @@ let orders = [
 ];
 
 // Start coding here
+let topSpend = 0;
+let topSpendID;
+for (let i = 0; i < orders.length; i++) {
+  let totalPrice = orders[i].productPrice * orders[i].productQuantity;
+  if (totalPrice > topSpend) {
+    topSpend = totalPrice;
+    topSpendID = orders[i].id;
+  }
+}
+let formattedTopSpend = topSpend.toLocaleString;
+console.log(`The most expensive order is id ${topSpendID} (${topSpend} Baht)`);
